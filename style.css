@@ -17,9 +17,29 @@ h2 {
       /*線の種類（実線） 太さ 色*/
       border-bottom: solid 3px black;
     }
+
+    .list-009 {
+      list-style-type: disc;
+      list-style-position: inside;
+      padding: 1em;
+      border: 2px solid #6594e0;
+  }
+  
+  .list-009 li {
+      padding: .5em;
+  }
+  
+  .list-009 li:not(:last-child) {
+      border-bottom: 1px dashed #6594e0;
+  }
+  
+  .list-009 li::marker {
+      color: #6594e0;
+      font-size: 1.1em;
+  }
     
   
-  #gallery {
+  .gallery {
     display: grid;
     max-width: 1000px;
     margin: auto;
@@ -46,3 +66,13 @@ h2 {
     text-align: center;
     color: #EEE;
   }
+  .sns-btn {
+    display: flex;
+margin-top: 20px;
+  }
+
+  .sns-btn img {
+    width: 30px;
+    height: auto;
+  }
+  
