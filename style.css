@@ -18,25 +18,36 @@ h2 {
       border-bottom: solid 3px black;
     }
 
-    .list-009 {
-      list-style-type: disc;
-      list-style-position: inside;
-      padding: 1em;
-      border: 2px solid #6594e0;
-  }
-  
-  .list-009 li {
-      padding: .5em;
-  }
-  
-  .list-009 li:not(:last-child) {
-      border-bottom: 1px dashed #6594e0;
-  }
-  
-  .list-009 li::marker {
-      color: #6594e0;
-      font-size: 1.1em;
-  }
+    nav{
+      text-align: center;
+      }
+      nav ul{
+      margin: 0 ;
+      padding: 0 ;
+      }
+      nav li{
+      list-style: none;
+      display: inline-block;
+      width: 10%;
+      min-width: 90px;
+      }
+      nav li:not(:last-child){
+      border-right:2px solid #ddd;
+      }
+      nav a{
+      text-decoration: none;
+      color: #333;
+      }
+      nav a.current{
+      color: #00B0F0;
+      border-bottom:2px solid #00B0F0;
+      }
+      nav a:hover{
+      color:#F7CB4D;
+      border-bottom:2px solid #F7CB4D;
+      }
+      
+      
     
   
   .gallery {
